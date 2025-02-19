@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include <vector>//dynamic arrays
 #include <algorithm>
-#include <stdexcept>
-#include <fstream>
-
+#include <stdexcept>//for exception handling 
+#include <fstream>//for file handling
 using namespace std;
 
 class LibraryEntity {//abstract class
