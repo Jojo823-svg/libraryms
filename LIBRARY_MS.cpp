@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include <vector>//for dynamic arrays
 #include <algorithm>
-#include <stdexcept>
-#include <fstream>
+#include <stdexcept>//for exception handling
+#include <fstream>//for file handling
 
 using namespace std;
 
@@ -15,16 +15,16 @@ public://access specifier, polymorphism concept
 };
 
 class Person {//base class
-protected://access specifier, encapsulation concept
+protected://access specifier, encapsulation concept (bundling of data)
     string name;
     int id;
     string contact;
     string role;
-public://access specifier
+public://access specifier-public access
     Person(string n, int i, string c, string r) : name(n), id(i), contact(c), role(r) {}//constructor initializing the attributes
     int getId() const { return id; }
     string getRole() const { return role; }
-    virtual void displayDetails() const {//virtual function
+    virtual void displayDetails() const {//virtual function, polymorphism concept
         cout << "Name: " << name << ", ID: " << id << ", Contact: " << contact << ", Role: " << role << endl;
     }
 };
